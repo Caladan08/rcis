@@ -15,7 +15,7 @@
 	<div>
 		<img src="/RCIS_Logo.png" alt="rcis logo" class="w-28" />
 	</div>
-	<button on:click={() => (hidden = false)} class="flex py-6 "><Menu size={32} /></button>
+	<button on:click={() => (hidden = false)} class="flex py-6 "><Menu size={32} class="hover:scale-125 hover:text-red transition-all" /></button>
 </div>
 
 <Drawer placement="right" transitionType="fly" {transitionParams} bind:hidden id="sidebar1">
