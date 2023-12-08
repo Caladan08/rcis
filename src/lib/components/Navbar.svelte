@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Drawer } from 'flowbite-svelte';
+	import { Drawer, GradientButton } from 'flowbite-svelte';
 	import { sineIn } from 'svelte/easing';
 	import Menu from 'carbon-icons-svelte/lib/Menu.svelte';
 	import Close from 'carbon-icons-svelte/lib/Close.svelte';
@@ -16,9 +16,14 @@
 	<div>
 		<img src="/RCIS_Logo.png" alt="rcis logo" class="w-28" />
 	</div>
-	<button on:click={() => (hidden = false)} class="flex py-6"
-		><Menu size={32} class="hover:scale-125 hover:text-red transition-all" /></button
-	>
+	<div class="flex items-center gap-8">
+		<div>
+			<GradientButton outline color="cyanToBlue" class="from-red to-purple">Login</GradientButton>
+		</div>
+		<button on:click={() => (hidden = false)} class="flex py-6"
+			><Menu size={44} class="hover:scale-125 hover:text-red transition-all" /></button
+		>
+	</div>
 </div>
 
 <Drawer
