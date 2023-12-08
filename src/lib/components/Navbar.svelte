@@ -21,7 +21,7 @@
 			<GradientButton outline color="cyanToBlue" class="from-red to-purple">Login</GradientButton>
 		</div>
 		<button on:click={() => (hidden = false)} class="flex py-6"
-			><Menu size={44} class="hover:scale-125 hover:text-red transition-all" /></button
+			><Menu size={32} class="hover:scale-125 hover:text-red transition-all" /></button
 		>
 	</div>
 </div>
