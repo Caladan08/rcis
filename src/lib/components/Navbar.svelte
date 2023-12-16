@@ -39,7 +39,7 @@
 	class="bg-purple w-[28rem]"
 >
 	<div class="content w-full flex flex-col">
-		<div class="w-full flex justify-end mb-12">
+		<div class="w-full flex justify-end mb-6">
 			<button on:click={() => (hidden = true)} class="text-white"><Close size={32} /></button>
 		</div>
 		<div class="search w-full">
