@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Drawer, GradientButton, Card } from 'flowbite-svelte';
+	import { Drawer, Card } from 'flowbite-svelte';
 	import { sineIn } from 'svelte/easing';
 	import Menu from 'carbon-icons-svelte/lib/Menu.svelte';
 	import Close from 'carbon-icons-svelte/lib/Close.svelte';
@@ -21,7 +21,7 @@
 	<div class="flex items-center gap-8">
 		<div>
 			<a href="https://rcis.myclassboard.com/%20" target="_blank" rel="noreferrer">
-				<GradientButton outline color="cyanToBlue" class="from-red to-purple">Login</GradientButton>
+				<button class="text-white px-6 rounded-md py-[0.7rem] bg-gradient-to-br from-red/70 to-purple/70">Login</button>
 			</a>
 		</div>
 		<button on:click={() => (hidden = false)} class="flex py-6"
