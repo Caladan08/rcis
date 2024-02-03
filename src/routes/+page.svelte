@@ -1,6 +1,10 @@
 <script lang="ts">
 	import { Carousel } from 'flowbite-svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import { scale } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
+
+	const scaleAnimation = (x) => scale(x, { duration: 500, easing: quintOut });
 
 	const images = [
 		{
@@ -31,12 +35,14 @@
 	];
 </script>
 
-<div class="heroSection h-screen relative">
-	<div class="absolute top-0 left-0 z-[100] w-full">
-		<Navbar />
-	</div>
-	<div class="carousel ">
-		<Carousel {images} duration={3000} class="h-full" imgClass="rounded-[0]" />
+<div class="bg-black">
+	<div class="heroSection h-screen relative bg-gradient-to-br from-red/70 to-purple/70">
+		<div class="absolute top-0 left-0 z-[100] w-full">
+			<Navbar />
+		</div>
+		<div class="carousel ">
+			<Carousel {images} duration={3000} class="h-full" imgClass="rounded-[0]" transition={scaleAnimation} />
+		</div>
 	</div>
 </div>
 
