@@ -16,17 +16,17 @@
 		{
 			alt: 'test2',
 			src: 'https://rcis.in/wp-content/uploads/2023/11/banner-001-fully-carpeted-terrace-for-sports-1920x1080-1.jpg',
-			title: 'test2'
+			title: 'test3'
 		},
 		{
 			alt: 'test2',
 			src: 'https://rcis.in/wp-content/uploads/2023/11/banner-003-robotics-1920x1080-2.jpg',
-			title: 'test2'
+			title: 'test4'
 		},
 		{
 			alt: 'test2',
 			src: 'https://rcis.in/wp-content/uploads/2023/11/banner-m-001-amphitheater-1920x1080-1.jpg',
-			title: 'test2'
+			title: 'test5'
 		}
 	];
 </script>
@@ -36,9 +36,7 @@
 		<Navbar />
 	</div>
 	<div class="carousel ">
-		<Carousel {images} duration={3000} let:Controls class="h-full" imgClass="rounded-[0]">
-			<Controls />
-		</Carousel>
+		<Carousel {images} duration={3000} class="h-full" imgClass="rounded-[0]" />
 	</div>
 </div>
 
