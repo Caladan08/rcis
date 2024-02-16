@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Carousel } from 'flowbite-svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import { fly } from "svelte/transition"
+	import { fly } from 'svelte/transition';
 
 	const images = [
 		{
@@ -49,7 +49,7 @@
 					{#key index}
 						<div class="absolute h-full items-end w-full flex justify-center">
 							<h1
-								transition:fly={{ y: 200, duration: 500}}
+								transition:fly={{ y: 200, duration: 500 }}
 								class="text-5xl leading-tight font-[300] uppercase font-['Montserrat'] mb-24 text-white text-center"
 							>
 								{@html images[index].text}
@@ -60,11 +60,38 @@
 			</Carousel>
 		</div>
 	</div>
+	<div class="flex bg-[url('/SectionTwoBG.svg')] bg-cover bg-center innerShadow">
+		<div class="w-1/2 px-12 py-16">
+			<h1 class="uppercase font-['Montserrat'] text-white text-4xl">
+				embark on a journey of <br /> global excellence and <br />leadership at
+				<b>royale <br />concorde international school</b>
+			</h1>
+			<br>
+			<p class="font-['Montserrat'] text-white text-xl">
+				Unlocking Potential Beyond the Classroom, Royale Concorde International School Fosters
+				<b>Curiosity</b>, <b>Creativity</b>, and <b>Self-Belief</b>.<br><br> With a strong presence in both Bangalore and Mysore,
+				we provide a forward-thinking, globally renowned education that nurtures individual talents
+				and passions. Prepare for a journey of self-assuredness with us!<br><br> Our committed educators
+				create an enriching learning atmosphere, promoting the expression of unique abilities and
+				passions, equipping students for a journey filled with confidence in the global arena.
+			</p>
+		</div>
+		<div class="w-1/2 flex justify-end">
+			<img
+				src="https://rcis.in/wp-content/uploads/2023/11/homepage-right-003c.jpg"
+				alt="students studying at school"
+				class="w-[35rem] h-[35rem] rounded-bl-full"
+			/>
+		</div>
+	</div>
 </div>
 
 <style>
-  :global(.carousel > div > div) {
-    height: 100vh;
-    border-radius: 0;
-  }
+	:global(.carousel > div > div) {
+		height: 100vh;
+		border-radius: 0;
+	}
+	.innerShadow {
+		box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.4) inset;
+	}
 </style>
