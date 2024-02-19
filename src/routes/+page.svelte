@@ -62,12 +62,12 @@
 	</div>
 	<div class="flex bg-[url('/SectionTwoBG.svg')] bg-cover bg-center innerShadow">
 		<div class="w-1/2 px-12 py-16">
-			<h1 class="uppercase font-['Montserrat'] text-white text-4xl">
+			<h1 class="uppercase text-white text-4xl">
 				embark on a journey of <br /> global excellence and <br />leadership at
 				<b>royale <br />concorde international school</b>
 			</h1>
 			<br>
-			<p class="font-['Montserrat'] text-white text-xl">
+			<p class="text-white text-xl">
 				Unlocking Potential Beyond the Classroom, Royale Concorde International School Fosters
 				<b>Curiosity</b>, <b>Creativity</b>, and <b>Self-Belief</b>.<br><br> With a strong presence in both Bangalore and Mysore,
 				we provide a forward-thinking, globally renowned education that nurtures individual talents
@@ -76,17 +76,22 @@
 				passions, equipping students for a journey filled with confidence in the global arena.
 			</p>
 		</div>
-		<div class="w-1/2 flex justify-end">
-			<img
-				src="https://rcis.in/wp-content/uploads/2023/11/homepage-right-003c.jpg"
-				alt="students studying at school"
-				class="w-[35rem] h-[35rem] rounded-bl-full"
-			/>
+		<div class="w-1/2 flex justify-center items-center">
+			<div class="bounce h-full w-full flex items-center justify-center">
+				<img
+					src="https://rcis.in/wp-content/uploads/2023/11/homepage-right-003c.jpg"
+					alt="students studying at school"
+					class="w-[35rem] h-[35rem] rounded-full border-2 border-dashed border-red"
+				/>
+			</div>
 		</div>
 	</div>
 </div>
 
 <style>
+	p, h1 {
+		font-family: Montserrat;
+	}
 	:global(.carousel > div > div) {
 		height: 100vh;
 		border-radius: 0;
