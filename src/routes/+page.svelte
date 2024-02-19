@@ -61,19 +61,20 @@
 		</div>
 	</div>
 	<div class="flex bg-[url('/SectionTwoBG.svg')] bg-cover bg-center innerShadow">
-		<div class="w-1/2 px-12 py-16">
+		<div class="w-1/2 p-12">
 			<h1 class="uppercase text-white text-4xl">
 				embark on a journey of <br /> global excellence and <br />leadership at
 				<b>royale <br />concorde international school</b>
 			</h1>
-			<br>
+			<br />
 			<p class="text-white text-xl">
 				Unlocking Potential Beyond the Classroom, Royale Concorde International School Fosters
-				<b>Curiosity</b>, <b>Creativity</b>, and <b>Self-Belief</b>.<br><br> With a strong presence in both Bangalore and Mysore,
-				we provide a forward-thinking, globally renowned education that nurtures individual talents
-				and passions. Prepare for a journey of self-assuredness with us!<br><br> Our committed educators
-				create an enriching learning atmosphere, promoting the expression of unique abilities and
-				passions, equipping students for a journey filled with confidence in the global arena.
+				<b>Curiosity</b>, <b>Creativity</b>, and <b>Self-Belief</b>.<br /><br /> With a strong
+				presence in both Bangalore and Mysore, we provide a forward-thinking, globally renowned
+				education that nurtures individual talents and passions. Prepare for a journey of
+				self-assuredness with us!<br /><br /> Our committed educators create an enriching learning atmosphere,
+				promoting the expression of unique abilities and passions, equipping students for a journey filled
+				with confidence in the global arena.
 			</p>
 		</div>
 		<div class="w-1/2 flex justify-center items-center">
@@ -86,12 +87,60 @@
 			</div>
 		</div>
 	</div>
+	<div class="w-full flex justify-center bg-[#0d0d0d] p-12">
+		<div class="flex gap-4">
+			<a href="/facilities">
+				<div
+					class="flex flex-col justify-end hover:bg-[#262626] bg-[#171717] transition-all rounded-lg facilityOne hover:scale-[1.02] p-6"
+				>
+					<h1 class="text-2xl font-bold text-white">Facilities</h1>
+				</div>
+			</a>
+			<a href="/admission/overview">
+				<div
+					class="flex flex-col justify-end hover:bg-[#262626] bg-[#171717] transition-all rounded-lg facilityTwo hover:scale-[1.02] p-6"
+				>
+					<h1 class="text-2xl font-bold text-white">Admissions</h1>
+				</div>
+			</a>
+			<a href="/campus-life/extra-curricular-activities">
+				<div
+					class="flex flex-col justify-end hover:bg-[#262626] bg-[#171717] transition-all rounded-lg facilityThree hover:scale-[1.02] p-6"
+				>
+					<h1 class="text-2xl font-bold text-white">Sports Infrastructure</h1>
+				</div>
+			</a>
+		</div>
+	</div>
 </div>
 
 <style>
-	p, h1 {
+	p,
+	h1 {
 		font-family: Montserrat;
 	}
+
+	.facilityOne,
+	.facilityTwo,
+	.facilityThree {
+		width: 450px;
+		height: 350px;
+		background-size: cover;
+	}
+
+	.facilityOne {
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+			url('https://rcis.in/wp-content/uploads/2023/09/Facilities-01.jpg');
+	}
+	.facilityTwo {
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+			url('https://rcis.in/wp-content/uploads/2023/09/Admissions-01.jpg');
+	}
+	.facilityThree {
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+			url('https://rcis.in/wp-content/uploads/2023/09/Sports-Infrastructure-01.jpg');
+	}
+
 	:global(.carousel > div > div) {
 		height: 100vh;
 		border-radius: 0;
