@@ -114,7 +114,7 @@
 	</div>
 	<div class="p-12 w-full bg-white">
 		<div class="w-full flex items-center flex-col gap-10">
-			<h1 class="text-4xl font-bold">Our results speak for themselves</h1>
+			<h1 class="text-4xl font-bold">Our accomplishments stand as evidence</h1>
 			<div class="numbers w-full flex justify-evenly cursor-default">
 				<div class="flex flex-col">
 					<h1 class="font-extralight text-6xl">20</h1>
