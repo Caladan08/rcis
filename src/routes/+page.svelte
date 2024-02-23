@@ -141,12 +141,36 @@
 				take a sneak peek at <b class="font-bold">royale concorde international school</b>
 			</h1>
 			<div class="grid grid-cols-3 gap-4">
-				<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg" alt="" class="rounded-lg transition-all hover:scale-[1.02]" />
-				<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg" alt="" class="rounded-lg transition-all hover:scale-[1.02]" />
-				<img src="https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg" alt="" class="rounded-lg transition-all hover:scale-[1.02]" />
-				<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg" alt="" class="rounded-lg transition-all hover:scale-[1.02]" />
-				<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg" alt="" class="rounded-lg transition-all hover:scale-[1.02]" />
-				<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg" alt="" class="rounded-lg transition-all hover:scale-[1.02]" />
+				<img
+					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg"
+					alt=""
+					class="rounded-lg transition-all hover:scale-[1.02]"
+				/>
+				<img
+					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg"
+					alt=""
+					class="rounded-lg transition-all hover:scale-[1.02]"
+				/>
+				<img
+					src="https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg"
+					alt=""
+					class="rounded-lg transition-all hover:scale-[1.02]"
+				/>
+				<img
+					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg"
+					alt=""
+					class="rounded-lg transition-all hover:scale-[1.02]"
+				/>
+				<img
+					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg"
+					alt=""
+					class="rounded-lg transition-all hover:scale-[1.02]"
+				/>
+				<img
+					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg"
+					alt=""
+					class="rounded-lg transition-all hover:scale-[1.02]"
+				/>
 			</div>
 		</div>
 	</div>
