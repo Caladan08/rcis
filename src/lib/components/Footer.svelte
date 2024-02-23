@@ -63,7 +63,7 @@
 				</div>
 			</div>
 			<br />
-			<br>
+			<br />
 			<div class="flex gap-2 items-center mb-4">
 				<Location size={32} />
 				<p class="font-extrabold inline text-2xl">RCIS, Chamrajpet (CBSE)</p>
@@ -80,6 +80,31 @@
 					<h1>inforcis07@gmail.com</h1>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="w-full flex text-white">
+		<div class="border-r-[1px] border-solid border-white/50 p-8 w-4/6">
+			<div class="flex items-center gap-12 mb-4">
+				<h1 class="font-extrabold text-2xl uppercase">main schools:</h1>
+				<a
+					href="/schools/royale-concorde-international-school-kalyan-nagar-cbse/"
+					class="text-lg font-extralight">Kalyan Nagar (CBSE)</a
+				>
+				<p class="text-lg font-extralight">Chamrajpet (CBSE)</p>
+			</div>
+			<div class="flex items-center gap-12">
+				<h1 class="font-extrabold text-2xl uppercase">colleges:</h1>
+				<a href="/schools/royale-concorde-pu-college-kalyan-nagar" class="text-lg font-extralight"
+					>Kalyan Nagar, PUC (New Openings)</a
+				>
+				<a href="/schools/royale-concorde-pu-college-begur/" class="text-lg font-extralight"
+					>Begur, PUC (New Openings)</a
+				>
+			</div>
+		</div>
+		<div class="flex p-8 flex-col text-white w-2/6">
+			<h1 class="font-extrabold text-2xl uppercase">school timing:</h1>
+			<p class="ml-6">Monday - Saturday (8.00 am - 3.30 am)</p>
 		</div>
 	</div>
 </div>
