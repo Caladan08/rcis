@@ -2,6 +2,11 @@
 	import Location from 'carbon-icons-svelte/lib/Location.svelte';
 	import PhoneFilled from 'carbon-icons-svelte/lib/PhoneFilled.svelte';
 	import EmailNew from 'carbon-icons-svelte/lib/EmailNew.svelte';
+
+	import LogoX from 'carbon-icons-svelte/lib/LogoX.svelte';
+	import LogoFacebook from 'carbon-icons-svelte/lib/LogoFacebook.svelte';
+	import LogoInstagram from 'carbon-icons-svelte/lib/LogoInstagram.svelte';
+	import LogoYoutube from 'carbon-icons-svelte/lib/LogoYoutube.svelte';
 </script>
 
 <div class="bg-red w-full p-4">
@@ -10,35 +15,37 @@
 			<div class="flex flex-col gap-2">
 				<h1 class="uppercase text-white text-2xl font-extrabold">about us</h1>
 				<hr />
-				<a href="/about/about-royale-concorde-international-school-group" class="text-white text-md"
-					>About the School</a
+				<a
+					href="/about/about-royale-concorde-international-school-group"
+					class="text-white text-md link">About the School</a
 				>
-				<a href="/about/philosophy" class="text-white text-md">Our Philosophy</a>
-				<a href="/about/our-mission" class="text-white text-md">Vision and Mission</a>
-				<a href="/about/management" class="text-white text-md">Management</a>
-				<a href="/about/awards-accreditations" class="text-white text-md">Awards and Honours</a>
+				<a href="/about/philosophy" class="text-white text-md link">Our Philosophy</a>
+				<a href="/about/our-mission" class="text-white text-md link">Vision and Mission</a>
+				<a href="/about/management" class="text-white text-md link">Management</a>
+				<a href="/about/awards-accreditations" class="text-white text-md link">Awards and Honours</a
+				>
 			</div>
 			<div class="flex flex-col gap-2">
 				<h1 class="uppercase text-white text-2xl font-extrabold">Admissions</h1>
 				<hr />
-				<a href="/admission/overview" class="text-white text-md">Overview</a>
-				<a href="/admission/admission-process" class="text-white text-md">Admission Process</a>
-				<a href="/admission/faqs" class="text-white text-md">FAQs</a>
+				<a href="/admission/overview" class="text-white text-md link">Overview</a>
+				<a href="/admission/admission-process" class="text-white text-md link">Admission Process</a>
+				<a href="/admission/faqs" class="text-white text-md link">FAQs</a>
 			</div>
 			<div class="flex flex-col gap-2">
 				<h1 class="uppercase text-white text-2xl font-extrabold">quick links</h1>
 				<hr />
 				<a
 					href="https://www.univariety.com/app/schoolInformation/counselling/967?year=2018"
-					class="text-white text-md">Guidance</a
+					class="text-white text-md link">Guidance</a
 				>
 				<a
 					href="https://www.univariety.com/app/schoolInformation/placements/967?year=2018"
-					class="text-white text-md">Placement</a
+					class="text-white text-md link">Placement</a
 				>
-				<a href="/facilities" class="text-white text-md">Facilities</a>
-				<a href="/contact-us" class="text-white text-md">Enquire</a>
-				<a href="/campus-life/co-curricular-activities" class="text-white text-md"
+				<a href="/facilities" class="text-white text-md link">Facilities</a>
+				<a href="/contact-us" class="text-white text-md link">Enquire</a>
+				<a href="/campus-life/co-curricular-activities" class="text-white text-md link"
 					>Co-Curricular Activities</a
 				>
 			</div>
@@ -88,34 +95,58 @@
 				<h1 class="font-extrabold text-2xl uppercase">main schools:</h1>
 				<a
 					href="/schools/royale-concorde-international-school-kalyan-nagar-cbse/"
-					class="text-lg font-extralight">Kalyan Nagar (CBSE)</a
+					class="text-lg font-extralight link">Kalyan Nagar (CBSE)</a
 				>
 				<p class="text-lg font-extralight">Chamrajpet (CBSE)</p>
 			</div>
 			<div class="flex items-center gap-12">
 				<h1 class="font-extrabold text-2xl uppercase">colleges:</h1>
-				<a href="/schools/royale-concorde-pu-college-kalyan-nagar" class="text-lg font-extralight"
-					>Kalyan Nagar, PUC (New Openings)</a
+				<a
+					href="/schools/royale-concorde-pu-college-kalyan-nagar"
+					class="text-lg font-extralight link">Kalyan Nagar, PUC (New Openings)</a
 				>
-				<a href="/schools/royale-concorde-pu-college-begur/" class="text-lg font-extralight"
+				<a href="/schools/royale-concorde-pu-college-begur/" class="text-lg font-extralight link"
 					>Begur, PUC (New Openings)</a
 				>
 			</div>
 		</div>
 		<div class="flex p-8 flex-col text-white w-2/6">
-			<h1 class="font-extrabold text-2xl uppercase">school timing:</h1>
+			<h1 class="font-extrabold text-2xl uppercase mb-2">school timing:</h1>
 			<p class="ml-6">Monday - Saturday (8.00 am - 3.30 am)</p>
+			<br />
+			<div class="flex gap-2">
+				<a
+					target="_blank"
+					rel="noreferrer"
+					href="https://www.facebook.com/rciskalyannagarblr/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"
+				>
+					<LogoFacebook size={32} class="transition-all hover:text-black" />
+				</a>
+				<a href="https://www.instagram.com/rciskalyannagar" target="_blank" rel="noreferrer">
+					<LogoInstagram size={32} class="transition-all hover:text-black" />
+				</a>
+				<a href="https://twitter.com/rcischool" target="_blank" rel="noreferrer">
+					<LogoX size={32} class="transition-all hover:text-black" />
+				</a>
+				<a
+					href="https://www.youtube.com/channel/UCi0E9Xpu_t1KWaA9sPneBrg"
+					target="_blank"
+					rel="noreferrer"
+				>
+					<LogoYoutube size={32} class="transition-all hover:text-black" />
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
 
 <style>
-	a {
+	a.link {
 		position: relative;
 		outline: none !important;
 		transition: 0.2s;
 	}
-	a::after {
+	a.link::after {
 		content: '';
 		background-color: black;
 		position: absolute;
@@ -126,13 +157,13 @@
 		transition: 0.2s;
 	}
 
-	a:hover,
-	a:focus {
+	a.link:hover,
+	a.link:focus {
 		color: black;
 	}
 
-	a:hover::after,
-	a:focus::after {
+	a.link:hover::after,
+	a.link:focus::after {
 		background-color: black;
 		width: 100%;
 	}
