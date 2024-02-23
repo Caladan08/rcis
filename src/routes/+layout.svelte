@@ -1,6 +1,7 @@
 <script>
 	import '../app.pcss';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import { page } from "$app/stores"
 </script>
 
@@ -8,6 +9,7 @@
 	<Navbar />
 {/if}
 <slot />
+<Footer />
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
