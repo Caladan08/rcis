@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Location from 'carbon-icons-svelte/lib/Location.svelte';
 	import PhoneFilled from 'carbon-icons-svelte/lib/PhoneFilled.svelte';
 	import EmailNew from 'carbon-icons-svelte/lib/EmailNew.svelte';
@@ -7,7 +7,30 @@
 	import LogoFacebook from 'carbon-icons-svelte/lib/LogoFacebook.svelte';
 	import LogoInstagram from 'carbon-icons-svelte/lib/LogoInstagram.svelte';
 	import LogoYoutube from 'carbon-icons-svelte/lib/LogoYoutube.svelte';
+
+	import { SvelteToast, toast } from '@zerodevx/svelte-toast';
+
+	function copyPhoneNum(e: any) {
+		navigator.clipboard.writeText(e.target?.innerHTML);
+		toast.push(`<h1>Phone number copied</h1>`, {
+			theme: {
+				'--toastColor': 'mintcream',
+				'--toastBackground': 'rgba(72,187,120,0.9)',
+				'--toastBarBackground': '#2F855A',
+				'--toastBorderRadius': '6px'
+			}
+		});
+	}
+
+	const options = {
+		duration: 3000,
+		initial: 1,
+		next: 0,
+		intro: { x: 256 }
+	};
 </script>
+
+<SvelteToast {options} />
 
 <div class="bg-red w-full p-4">
 	<div class="w-full flex border-b-[1px] border-solid border-white/50">
@@ -59,7 +82,12 @@
 				<div class="flex gap-2 items-center">
 					<PhoneFilled size={46} />
 					<h1>
-						080-25435458/ 080-25435459/ 080-25435454/ 080-25535455/ +91 9844702444 / +91 9535216115
+						<span on:click={(e) => copyPhoneNum(e)}>080-25435458</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>080-25435459</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>080-25435454</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>080-25535455</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>+91 9844702444</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>+91 9535216115</span>
 					</h1>
 				</div>
 			</div>
@@ -78,7 +106,13 @@
 			<div class="ml-6 mb-2">
 				<div class="flex gap-2 items-center">
 					<PhoneFilled size={39} />
-					<h1>+91 9148820597/ 080-29745680/ 080-29744088/ 080-29744383/ +91 9071 399 777</h1>
+					<h1>
+						<span on:click={(e) => copyPhoneNum(e)}>+91 9148820597</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>080-29745680</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>080-29744088</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>080-29744383</span>/
+						<span on:click={(e) => copyPhoneNum(e)}>+91 9071 399 777</span>
+					</h1>
 				</div>
 			</div>
 			<div class="ml-6">
@@ -87,6 +121,7 @@
 					<h1>inforcis07@gmail.com</h1>
 				</div>
 			</div>
+			<br />
 		</div>
 	</div>
 	<div class="w-full flex text-white">
@@ -166,5 +201,9 @@
 	a.link:focus::after {
 		background-color: black;
 		width: 100%;
+	}
+
+	span {
+		cursor: pointer;
 	}
 </style>
