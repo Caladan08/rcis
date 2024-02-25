@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Carousel } from 'flowbite-svelte';
+	import { Carousel, Thumbnails } from 'flowbite-svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { fly } from 'svelte/transition';
 
@@ -35,6 +35,48 @@
 			text: "Unleashing Potential,<br> Navigating Tomorrow's<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Unknown Challenges</b>"
 		}
 	];
+
+	const sneakPeek = [
+		{
+			alt: 'test',
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg',
+			title: 'test',
+			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+		},
+		{
+			alt: 'test',
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg',
+			title: 'test',
+			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+		},
+		{
+			alt: 'test',
+			src: 'https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg',
+			title: 'test',
+			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+		},
+		{
+			alt: 'test',
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg',
+			title: 'test',
+			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+		},
+		{
+			alt: 'test',
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg',
+			title: 'test',
+			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+		},
+		{
+			alt: 'test',
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg',
+			title: 'test',
+			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+		}
+	];
+
+	let forward = true;
+	let index = 0;
 </script>
 
 <div class="bg-black">
@@ -43,7 +85,7 @@
 			<Navbar />
 		</div>
 		<div class="carousel">
-			<Carousel {images} duration={3000} class="h-full" imgClass="rounded-[0]">
+			<Carousel {images} duration={3000} imgClass="rounded-[0]">
 				<div let:Slide slot="slide" let:index class="relative">
 					<Slide image={images[index]} />
 					{#key index}
@@ -135,42 +177,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="p-12 bg-purple">
-		<div class="w-full flex items-center text-center flex-col gap-12">
-			<h1 class="uppercase font-light text-white text-5xl">
+	<div class="p-12 bg-[url('/SneakPeek.svg')] bg-cover">
+		<div class="">
+			<h1 class="uppercase font-light text-white text-5xl text-center mb-12">
 				take a sneak peek at <b class="font-bold">royale concorde international school</b>
 			</h1>
-			<div class="grid grid-cols-3 gap-4">
-				<img
-					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg"
-					alt=""
-					class="rounded-lg transition-all hover:scale-[1.02]"
-				/>
-				<img
-					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg"
-					alt=""
-					class="rounded-lg transition-all hover:scale-[1.02]"
-				/>
-				<img
-					src="https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg"
-					alt=""
-					class="rounded-lg transition-all hover:scale-[1.02]"
-				/>
-				<img
-					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg"
-					alt=""
-					class="rounded-lg transition-all hover:scale-[1.02]"
-				/>
-				<img
-					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg"
-					alt=""
-					class="rounded-lg transition-all hover:scale-[1.02]"
-				/>
-				<img
-					src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg"
-					alt=""
-					class="rounded-lg transition-all hover:scale-[1.02]"
-				/>
+			<div class="mx-24 sneakPeek">
+				<Carousel images={sneakPeek} {forward} duration={3000} let:Controls bind:index>
+					<Controls />
+				</Carousel>
+				<br>
+				<Thumbnails images={sneakPeek} {forward} bind:index />
 			</div>
 		</div>
 	</div>
@@ -205,6 +222,10 @@
 
 	:global(.carousel > div > div) {
 		height: 100vh;
+		border-radius: 0;
+	}
+	:global(.sneakPeek > div > div) {
+		height: 32rem;
 		border-radius: 0;
 	}
 	.innerShadow {
