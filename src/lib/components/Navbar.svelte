@@ -15,9 +15,9 @@
 </script>
 
 <div class="flex justify-between px-12 py-6">
-	<div>
+	<a href="/">
 		<img src="/RCIS_Logo.png" alt="rcis logo" class="w-28" />
-	</div>
+	</a>
 	<div class="flex items-center gap-8">
 		<div>
 			<a href="https://rcis.myclassboard.com/%20" target="_blank" rel="noreferrer">
