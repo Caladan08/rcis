@@ -189,7 +189,7 @@
 	}
 	
 	.heroSection {
-		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
 			url('https://rcis.in/wp-content/uploads/2023/10/Independence-Day-2023-24-new-006.jpg');
 	}
 </style>

@@ -59,7 +59,7 @@
 			</a>
 		</div>
 		<button on:click={() => (hidden = false)} class="flex py-6"
-			><Menu size={49} class="hover:scale-125 hover:text-red transition-all" /></button
+			><Menu size={49} class="hover:scale-125 hover:text-red transition-all text-white" /></button
 		>
 	</div>
 </div>
