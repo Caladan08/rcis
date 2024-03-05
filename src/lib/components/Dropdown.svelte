@@ -21,7 +21,7 @@
 				id="myDropdown"
 				in:fly={{ y: -5, duration: 500 }}
 				out:fly={{ y: -5, duration: 500 }}
-				class={`dropdown-content bg-white text-sm rounded-md block absolute min-w-[160px] overflow-auto drop-shadow-2xl z-[111] mt-2`}
+				class="dropdown-content bg-white text-sm rounded-md block absolute min-w-[200px] overflow-auto drop-shadow-2xl z-[111] mt-2 transition-all"
 			>
 				<slot name="links" />
 			</div>
@@ -35,9 +35,12 @@
 		padding: 12px 16px;
 		text-decoration: none;
 		display: block;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		transition: 150ms ease-in-out;
 	}
 
-	:global(.dropdown a:hover) {
-		background-color: #ddd !important;
+	:global(.dropdown-content a:hover) {
+		background-color: rgba(214, 2, 2, 0.1) !important;
+		transition: 150ms ease-in-out;
 	}
 </style>
