@@ -10,7 +10,7 @@
 	on:mouseenter={() => (about = true)}
 	on:mouseleave={() => (about = false)}
 >
-	<h1 class="cursor-pointer text-white">
+	<h1 class="cursor-pointer text-white" on:mouseenter={() => (about = true)}>
 		<slot name="heading" />
 	</h1>
 	<!-- svelte-ignore a11y-no-static-element-interactions -->

@@ -15,7 +15,7 @@
 	let searchClicked = false;
 </script>
 
-<div class="flex justify-between px-12 py-6">
+<div class="flex justify-between px-12 py-3">
 	<a href="/">
 		<img src="/RCIS_Logo.png" alt="rcis logo" class="w-28" />
 	</a>
