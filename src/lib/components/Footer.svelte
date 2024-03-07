@@ -10,9 +10,9 @@
 
 	import { SvelteToast, toast } from '@zerodevx/svelte-toast';
 
-	function copyPhoneNum(e: any) {
+	function copyPhoneNum(e: any, phone: boolean) {
 		navigator.clipboard.writeText(e.target?.innerHTML);
-		toast.push(`<h1>Phone number copied</h1>`, {
+		toast.push(`<h1>${phone ? "Phone number" : "Email ID"} copied</h1>`, {
 			theme: {
 				'--toastColor': 'mintcream',
 				'--toastBackground': 'rgba(72,187,120,0.9)',
@@ -81,20 +81,24 @@
 			<div class="ml-6 mb-2">
 				<div class="flex gap-2 items-center">
 					<PhoneFilled size={46} />
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-static-element-interactions -->
 					<h1>
-						<span on:click={(e) => copyPhoneNum(e)}>080-25435458</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>080-25435459</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>080-25435454</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>080-25535455</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>+91 9844702444</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>+91 9535216115</span>
+						<span on:click={(e) => copyPhoneNum(e, true)}>080-25435458</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>080-25435459</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>080-25435454</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>080-25535455</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>+91 9844702444</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>+91 9535216115</span>
 					</h1>
 				</div>
 			</div>
 			<div class="ml-6">
 				<div class="flex gap-2 items-center">
 					<EmailNew size={24} />
-					<h1>info@rcis.in</h1>
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+					<h1 class="cursor-pointer" on:click={(e) => copyPhoneNum(e, false)}>info@rcis.in</h1>
 				</div>
 			</div>
 			<br />
@@ -106,19 +110,23 @@
 			<div class="ml-6 mb-2">
 				<div class="flex gap-2 items-center">
 					<PhoneFilled size={39} />
+					<!-- svelte-ignore a11y-no-static-element-interactions -->
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
 					<h1>
-						<span on:click={(e) => copyPhoneNum(e)}>+91 9148820597</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>080-29745680</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>080-29744088</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>080-29744383</span>/
-						<span on:click={(e) => copyPhoneNum(e)}>+91 9071 399 777</span>
+						<span on:click={(e) => copyPhoneNum(e, true)}>+91 9148820597</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>080-29745680</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>080-29744088</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>080-29744383</span>/
+						<span on:click={(e) => copyPhoneNum(e, true)}>+91 9071 399 777</span>
 					</h1>
 				</div>
 			</div>
 			<div class="ml-6">
 				<div class="flex gap-2 items-center">
 					<EmailNew size={24} />
-					<h1>inforcis07@gmail.com</h1>
+					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+					<!-- svelte-ignore a11y-click-events-have-key-events -->
+					<h1 class="cursor-pointer" on:click={(e) => copyPhoneNum(e, false)}>inforcis07@gmail.com</h1>
 				</div>
 			</div>
 			<br />

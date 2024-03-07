@@ -61,6 +61,16 @@
 					>Empowering Future Achievers</b
 				>
 			</h1>
+			<!-- <button class="bg-gradient-to-br from-red to-purple py-4 px-12 rounded-lg font-bold text-white">Join Now</button> -->
+			<div class="grid ">
+				<a href="#" class="cta text-inherit">
+					<span>Click me</span>
+					<svg width="13px" height="10px" viewBox="0 0 13 10">
+						<path d="M1,5 L11,5"></path>
+						<polyline points="8 1 12 5 8 9"></polyline>
+					</svg>
+				</a>
+			</div>
 		</div>
 	</div>
 	<div class="flex bg-[url('/SectionTwoBG.svg')] bg-cover bg-center innerShadow">
@@ -187,9 +197,59 @@
 	.innerShadow {
 		box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.4) inset;
 	}
-	
+
 	.heroSection {
 		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
 			url('https://rcis.in/wp-content/uploads/2023/10/Independence-Day-2023-24-new-006.jpg');
+	}
+
+	.cta {
+		position: relative;
+		margin: auto;
+		padding: 19px 22px;
+		transition: all .2s ease
+	}
+  .cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(#FFAB9D, .5);
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease
+	}
+  .cta span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle
+	}
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease
+	}
+  .cta:hover::before {
+    width: 100%;
+    background: rgba(#FFAB9D, 1)
+	}
+	.cta:hover svg {
+    transform: translateX(0)
+	}
+  .cta::active {
+    transform: scale(.96)
 	}
 </style>
