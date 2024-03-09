@@ -51,7 +51,7 @@
 		<div>
 			<Navbar />
 		</div>
-		<div class="w-full h-1/2 flex justify-center flex-col gap-4 px-44">
+		<div class="w-full flex justify-center flex-col gap-4 px-44 pt-24">
 			<h1
 				transition:fly={{ y: 200, duration: 500 }}
 				class="text-[3.5rem] leading-tight font-[250] uppercase font-['Montserrat'] text-white text-left"
@@ -61,6 +61,10 @@
 					>Empowering Future Achievers</b
 				>
 			</h1>
+			<p class="text-white text-xl max-w-4xl">Discover a transformative educational journey at RCIS, where academic excellence meets holistic development, shapign tomorrow's leaders</p>
+			<li class="content__item z-[1] list-none">
+				<button class="button button--janus relative"><span>Join Us</span></button>
+			</li>
 		</div>
 	</div>
 	<div class="flex bg-[url('/SectionTwoBG.svg')] bg-cover bg-center innerShadow">
@@ -191,5 +195,74 @@
 	.heroSection {
 		background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
 			url('https://rcis.in/wp-content/uploads/2023/10/Independence-Day-2023-24-new-006.jpg');
+	}
+
+	.button::before,
+	.button::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.button--janus {
+		font-family: 'Playfair Display';
+		font-weight: 900;
+		width: 175px;
+		height: 120px;
+		color: #fff;
+		background: none;
+	}
+
+	.button--janus::before {
+		content: '';
+		background: #29235c;
+		-webkit-clip-path: path(
+			'M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z'
+		);
+		clip-path: path(
+			'M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z'
+		);
+		transition:
+			clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55),
+			-webkit-clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55),
+			background 0.5s ease;
+	}
+
+	.button--janus:hover::before {
+		background: #000;
+		-webkit-clip-path: path(
+			'M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z'
+		);
+		clip-path: path(
+			'M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z'
+		);
+	}
+
+	.button--janus::after {
+		content: '';
+		height: 86%;
+		width: 97%;
+		top: 5%;
+		border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
+		border: 1px solid #000;
+		transform: rotate(-20deg);
+		z-index: -1;
+		transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
+	}
+
+	.button--janus:hover::after {
+		transform: translate3d(0, -5px, 0);
+	}
+
+	.button--janus span {
+		display: block;
+		transition: transform 0.3s ease;
+		mix-blend-mode: difference;
+	}
+
+	.button--janus:hover span {
+		transform: translate3d(0, -10px, 0);
 	}
 </style>
