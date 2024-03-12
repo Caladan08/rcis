@@ -61,9 +61,12 @@
 					>Empowering Future Achievers</b
 				>
 			</h1>
-			<p class="text-white text-xl max-w-4xl">Discover a transformative educational journey at RCIS, where academic excellence meets holistic development, shapign tomorrow's leaders</p>
-			<li class="content__item z-[1] list-none">
-				<button class="button button--janus relative"><span>Join Us</span></button>
+			<p class="text-white text-xl max-w-4xl">
+				Discover a transformative educational journey at RCIS, where academic excellence meets
+				holistic development, shapign tomorrow's leaders
+			</p>
+			<li class="content__item z-[1] list-none mt-2">
+				<button class="button button--pandora relative text-white"><span>Join Us</span></button>
 			</li>
 		</div>
 	</div>
@@ -205,64 +208,25 @@
 		width: 100%;
 		height: 100%;
 	}
-
-	.button--janus {
-		font-family: 'Playfair Display';
-		font-weight: 900;
-		width: 175px;
-		height: 120px;
-		color: #fff;
-		background: none;
+	
+	.button--pandora {
+		background: #D60202;
+		font-weight: 700;
+		padding: 0;
+		border-radius: 5px;
 	}
 
-	.button--janus::before {
-		content: '';
-		background: #29235c;
-		-webkit-clip-path: path(
-			'M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z'
-		);
-		clip-path: path(
-			'M154.5,88.5 C131,113.5 62.5,110 30,89.5 C-2.5,69 -3.5,42 4.5,25.5 C12.5,9 33.5,-6 85,3.5 C136.5,13 178,63.5 154.5,88.5 Z'
-		);
-		transition:
-			clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55),
-			-webkit-clip-path 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55),
-			background 0.5s ease;
-	}
-
-	.button--janus:hover::before {
-		background: #000;
-		-webkit-clip-path: path(
-			'M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z'
-		);
-		clip-path: path(
-			'M143,77 C117,96 74,100.5 45.5,91.5 C17,82.5 -10.5,57 5.5,31.5 C21.5,6 79,-5.5 130.5,4 C182,13.5 169,58 143,77 Z'
-		);
-	}
-
-	.button--janus::after {
-		content: '';
-		height: 86%;
-		width: 97%;
-		top: 5%;
-		border-radius: 58% 42% 55% 45% / 56% 45% 55% 44%;
-		border: 1px solid #000;
-		transform: rotate(-20deg);
-		z-index: -1;
-		transition: transform 0.5s cubic-bezier(0.585, 2.5, 0.645, 0.55);
-	}
-
-	.button--janus:hover::after {
-		transform: translate3d(0, -5px, 0);
-	}
-
-	.button--janus span {
+	.button--pandora span {
 		display: block;
-		transition: transform 0.3s ease;
-		mix-blend-mode: difference;
+		background: #d55a5a;
+		padding: 1.25rem 2rem;
+		border: 1px solid #D60202;
+		border-radius: 5px;
+		transform: translate3d(-4px, -4px, 0);
+		transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
 	}
 
-	.button--janus:hover span {
-		transform: translate3d(0, -10px, 0);
+	.button--pandora:hover span {
+		transform: translate3d(-8px, -8px, 0);
 	}
 </style>
