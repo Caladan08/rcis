@@ -6,39 +6,27 @@
 	const sneakPeek = [
 		{
 			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg',
-			title: 'test',
-			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg'
 		},
 		{
 			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg',
-			title: 'test',
-			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg'
 		},
 		{
 			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg',
-			title: 'test',
-			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+			src: 'https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg'
 		},
 		{
 			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg',
-			title: 'test',
-			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg'
 		},
 		{
 			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg',
-			title: 'test',
-			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg'
 		},
 		{
 			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg',
-			title: 'test',
-			text: "Shaping Minds,<br> Nurturing Excellence,<br> <b style='text-shadow: 2px 2px 8px #000000' class='font-[800]'>Leading the Future</b>"
+			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg'
 		}
 	];
 
@@ -208,9 +196,9 @@
 		width: 100%;
 		height: 100%;
 	}
-	
+
 	.button--pandora {
-		background: #D60202;
+		background: #d60202;
 		font-weight: 700;
 		padding: 0;
 		border-radius: 5px;
@@ -220,7 +208,7 @@
 		display: block;
 		background: #d55a5a;
 		padding: 1.25rem 2rem;
-		border: 1px solid #D60202;
+		border: 1px solid #d60202;
 		border-radius: 5px;
 		transform: translate3d(-4px, -4px, 0);
 		transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
