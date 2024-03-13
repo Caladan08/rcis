@@ -34,6 +34,10 @@
 	let index = 0;
 </script>
 
+<svelte:head>
+	<title>Royale Concorde International School | Premium CBSE School in Bangalore, Nurturing Holistic Education</title>
+</svelte:head>
+
 <div>
 	<div class="heroSection h-screen bg-cover">
 		<div>
