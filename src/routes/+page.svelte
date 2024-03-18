@@ -1,41 +1,13 @@
 <script lang="ts">
-	import { Carousel, Thumbnails } from 'flowbite-svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import { fly } from 'svelte/transition';
-
-	const sneakPeek = [
-		{
-			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg'
-		},
-		{
-			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg'
-		},
-		{
-			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg'
-		},
-		{
-			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg'
-		},
-		{
-			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg'
-		},
-		{
-			alt: 'test',
-			src: 'https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg'
-		}
-	];
-
-	let forward = true;
-	let index = 0;
 </script>
 
 <svelte:head>
-	<title>Royale Concorde International School | Premium CBSE School in Bangalore, Nurturing Holistic Education</title>
+	<title
+		>Royale Concorde International School | Premium CBSE School in Bangalore, Nurturing Holistic
+		Education</title
+	>
 </svelte:head>
 
 <div>
@@ -138,17 +110,30 @@
 		</div>
 	</div>
 	<div class="p-12 bg-[url('/SneakPeek.svg')] bg-cover">
-		<div class="">
-			<h1 class="uppercase font-light text-white text-5xl text-center mb-12">
+		<div>
+			<div class="container flex">
+				<div class="card">
+					<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-08.jpg" alt="" class="w-full h-auto object-cover" />
+				</div>
+				<div class="card">
+					<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-01.jpg" alt="" class="w-full h-auto object-cover" />
+				</div>
+				<div class="card">
+					<img src="https://rcis.in/wp-content/uploads/2023/10/sneakpeak-004a.jpg" alt="" class="w-full h-auto object-cover" />
+				</div>
+				<div class="card">
+					<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-02.jpg" alt="" class="w-full h-auto object-cover" />
+				</div>
+				<div class="card">
+					<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-05.jpg" alt="" class="w-full h-auto object-cover" />
+				</div>
+				<div class="card">
+					<img src="https://rcis.in/wp-content/uploads/2023/09/Sneak-Peek-07.jpg" alt="" class="w-full h-auto object-cover" />
+				</div>
+			</div>
+			<h1 class="uppercase font-light text-white text-5xl text-left mt-12">
 				take a sneak peek at <b class="font-bold">royale concorde international school</b>
 			</h1>
-			<div class="mx-24 sneakPeek">
-				<Carousel images={sneakPeek} {forward} duration={3000} let:Controls bind:index>
-					<Controls />
-				</Carousel>
-				<br />
-				<Thumbnails images={sneakPeek} {forward} bind:index />
-			</div>
 		</div>
 	</div>
 </div>
@@ -212,7 +197,7 @@
 		display: block;
 		background: #d55a5a;
 		padding: 1.25rem 2rem;
-		border: 1px solid #d60202;
+		border: 0.5px solid #d60202;
 		border-radius: 5px;
 		transform: translate3d(-4px, -4px, 0);
 		transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
@@ -220,5 +205,32 @@
 
 	.button--pandora:hover span {
 		transform: translate3d(-8px, -8px, 0);
+	}
+
+	.card {
+		display: flex;
+		height: 490px;
+		width: 600px;
+		background-color: #17141d;
+		border-radius: 10px;
+		box-shadow: -1rem 0 3rem #000;
+		transition: 0.4s ease-out;
+		position: relative;
+		left: 0px;
+	}
+
+	.card:not(:first-child) {
+		margin-left: -50px;
+	}
+
+	.card:hover {
+		transform: translateY(-20px);
+		transition: 0.4s ease-out;
+	}
+
+	.card:hover ~ .card {
+		position: relative;
+		left: 50px;
+		transition: 0.4s ease-out;
 	}
 </style>
